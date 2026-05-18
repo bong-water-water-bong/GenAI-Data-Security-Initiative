@@ -1,6 +1,6 @@
 ---
 description: OWASP DSGAI 2026 compliance scanner — audits GenAI/agentic codebases against all 21 data security risks, produces a self-contained, redaction-safe HTML report
-argument-hint: [--internal] [--no-cve] [--scope <path>]
+argument-hint: '[--internal] [--no-cve] [--scope <path>]'
 allowed-tools: Read, Grep, Glob, Bash, Write, Edit, WebFetch, WebSearch
 ---
 
