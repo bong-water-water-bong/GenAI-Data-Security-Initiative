@@ -65,8 +65,7 @@ The companion implementation guide covering data security principles, secure dep
 
 The initiative maintains a comprehensive crosswalk of GenAI data security risks against 20 widely recognized cybersecurity and AI frameworks. The crosswalk covers all 41 entries across the OWASP LLM Top 10 2025, Agentic Top 10 2026, and DSGAI Risk Taxonomy.
 
-### 🌐 [Interactive Crosswalk Explorer →](https://emmanuelgjr.github.io/GenAI-Security-Crosswalk/)
-
+### 🌐 [Interactive Crosswalk Explorer →](https://genai-security-project.github.io/GenAI-Data-Security-Initiative/#/)
 The web application provides an interactive interface for exploring crosswalk mappings, framework coverage, incident data, security tooling, implementation recipes, and a glossary of key terms.
 
 Crosswalk source files are maintained in the [`/crosswalk`](https://github.com/GenAI-Security-Project/GenAI-Data-Security-Initiative/tree/main/crosswalk) directory.
