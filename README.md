@@ -86,15 +86,15 @@ Crosswalk source files are maintained in the [`/crosswalk`](https://github.com/G
 
 ## Workstreams
 
-**Data Collection** — Public open call for real-world vulnerability data and incident reports related to LLMs and GenAI applications. Submit data through the Slack channel or by opening an issue in this repository.
+1. **Data Collection** — Public open call for real-world vulnerability data and incident reports related to LLMs and GenAI applications. Submit data through the Slack channel or by opening an issue in this repository.
 
-**Framework Crosswalk** — Crosswalking the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llm-top-10/) and [Agentic Top 10 2026](https://genai.owasp.org/initiatives/agentic-security-initiative/) to recognized cybersecurity and AI frameworks. See the [Interactive Crosswalk Explorer](https://emmanuelgjr.github.io/GenAI-Security-Crosswalk/) and the [`/crosswalk`](https://github.com/GenAI-Security-Project/GenAI-Data-Security-Initiative/tree/main/crosswalk) directory for current crosswalk data.
+2. **Framework Crosswalk** — Crosswalking the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llm-top-10/) and [Agentic Top 10 2026](https://genai.owasp.org/initiatives/agentic-security-initiative/) to recognized cybersecurity and AI frameworks. See the [Interactive Crosswalk Explorer](https://emmanuelgjr.github.io/GenAI-Security-Crosswalk/) and the [`/crosswalk`](https://github.com/GenAI-Security-Project/GenAI-Data-Security-Initiative/tree/main/crosswalk) directory for current crosswalk data.
 
-**Data Security Risks & Best Practices** — Research, authoring, and maintenance of the initiative's two published white papers: the DSGAI risk taxonomy and the companion implementation guide. This workstream also maintains alignment with the broader OWASP GenAI Security Project deliverables.
+3. **Data Security Risks & Best Practices** — Research, authoring, and maintenance of the initiative's two published white papers: the DSGAI risk taxonomy and the companion implementation guide. This workstream also maintains alignment with the broader OWASP GenAI Security Project deliverables.
 
-**Community Datasets** — Development of open, community-contributed datasets for research, benchmarking, and security testing. See the [`/datasets`](https://github.com/GenAI-Security-Project/GenAI-Data-Security-Initiative/tree/main/datasets) directory for current and proposed datasets.
+4. **Community Datasets** — Development of open, community-contributed datasets for research, benchmarking, and security testing. See the [`/datasets`](https://github.com/GenAI-Security-Project/GenAI-Data-Security-Initiative/tree/main/datasets) directory for current and proposed datasets.
 
-**Data Validation** — Automated and peer-reviewed validation of all contributed data. Scripts in [`/data_validation`](https://github.com/GenAI-Security-Project/GenAI-Data-Security-Initiative/tree/main/data_validation) ensure integrity and accuracy.
+5. **Data Validation** — Automated and peer-reviewed validation of all contributed data. Scripts in [`/data_validation`](https://github.com/GenAI-Security-Project/GenAI-Data-Security-Initiative/tree/main/data_validation) ensure integrity and accuracy.
 
 ---
 
