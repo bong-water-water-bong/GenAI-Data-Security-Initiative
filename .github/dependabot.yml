@@ -1,0 +1,118 @@
+ # Dependabot configuration for GenAI-Data-Security-Initiative
+  # Docs: https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-depe
+  ndabot.yml-file
+  #
+  # Notes:
+  # - Security updates run automatically and are NOT controlled by this file
+  #   (see: Settings -> Code security -> Dependabot security updates).
+  # - Only enable an ecosystem block once a manifest for it exists in the repo,
+  #   otherwise Dependabot will surface an error on every run.
+
+  version: 2
+
+  updates:
+    # ----- GitHub Actions used by workflows in .github/workflows -----
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+        interval: "weekly"
+        day: "monday"
+        time: "06:00"
+        timezone: "Etc/UTC"
+      open-pull-requests-limit: 5
+      labels:
+        - "dependencies"
+        - "github-actions"
+        - "security"
+      commit-message:
+        prefix: "ci"
+        prefix-development: "ci"
+        include: "scope"
+      reviewers:
+        - "GenAI-Security-Project/maintainers"
+      groups:
+        actions-minor-and-patch:
+          applies-to: version-updates
+          update-types:
+            - "minor"
+            - "patch"
+        actions-security:
+          applies-to: security-updates
+          patterns:
+            - "*"
+
+    # ----- Uncomment when a Python manifest (requirements*.txt / pyproject.toml) lands -----
+    # - package-ecosystem: "pip"
+    #   directory: "/"
+    #   schedule:
+    #     interval: "weekly"
+    #     day: "monday"
+    #     time: "06:00"
+    #     timezone: "Etc/UTC"
+    #   open-pull-requests-limit: 10
+    #   versioning-strategy: "increase-if-necessary"
+    #   labels:
+    #     - "dependencies"
+    #     - "python"
+    #     - "security"
+    #   commit-message:
+    #     prefix: "deps"
+    #     prefix-development: "deps-dev"
+    #     include: "scope"
+    #   groups:
+    #     python-minor-and-patch:
+    #       applies-to: version-updates
+    #       update-types: ["minor", "patch"]
+    #     python-security:
+    #       applies-to: security-updates
+    #       patterns: ["*"]
+    #   ignore:
+    #     # Block silent major bumps; require explicit review.
+    #     - dependency-name: "*"
+    #       update-types: ["version-update:semver-major"]
+
+    # ----- Uncomment if a docs site / tooling adds package.json -----
+    # - package-ecosystem: "npm"
+    #   directory: "/"
+    #   schedule:
+    #     interval: "weekly"
+    #     day: "monday"
+    #     time: "06:00"
+    #     timezone: "Etc/UTC"
+    #   open-pull-requests-limit: 10
+    #   versioning-strategy: "increase-if-necessary"
+    #   labels:
+    #     - "dependencies"
+    #     - "javascript"
+    #     - "security"
+    #   commit-message:
+    #     prefix: "deps"
+    #     prefix-development: "deps-dev"
+    #     include: "scope"
+    #   groups:
+    #     npm-minor-and-patch:
+    #       applies-to: version-updates
+    #       update-types: ["minor", "patch"]
+    #     npm-security:
+    #       applies-to: security-updates
+    #       patterns: ["*"]
+    #   ignore:
+    #     - dependency-name: "*"
+    #       update-types: ["version-update:semver-major"]
+
+    # ----- Uncomment if/when a Dockerfile is added -----
+    # - package-ecosystem: "docker"
+    #   directory: "/"
+    #   schedule:
+    #     interval: "weekly"
+    #     day: "monday"
+    #     time: "06:00"
+    #     timezone: "Etc/UTC"
+    #   open-pull-requests-limit: 5
+    #   labels:
+    #     - "dependencies"
+    #     - "docker"
+    #     - "security"
+    #   commit-message:
+    #     prefix: "deps"
+    #     include: "scope"
